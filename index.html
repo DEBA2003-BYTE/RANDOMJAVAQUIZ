@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="banner">Welcome to the Random JAVA Quiz!</h1>
+
+  <div class="score-board">
+    <div class="high-scores">
+      <button class="btn" id="high-scores">View High Scores</button>
+    </div>
+    <div class="timer">
+      <h1 id="timer">Time: 60</h1> <!-- Added initial time for clarity -->
+    </div>
+  </div>
+
+  <div class="question-card">
+    <div id="answer-return"></div>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <!-- Answer buttons will be generated here -->
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+    </div>
+    <p id="description">
+      Welcome to the random JAVA knowledge quiz! Answer all of the questions before the time runs out. A wrong answer will dock your remaining time! 60 seconds on the clock!
+    </p>
+  </div>
+
+  <div class="score hide" id="score">
+    <h1 id="user-score"></h1>
+    <form id="form">
+      <input type="text" name="data" id="initials" placeholder="Enter your initials" required />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="container hide" id="leaderboard">
+    <h1>High Rollers Club</h1>
+    <ul id="leaders">
+      <!-- Leaderboard items will be generated here -->
+    </ul>
+    <button class="btn" id="clear">Clear Scores</button>
+    <button class="btn" id="play-again">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
